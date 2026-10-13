@@ -1285,6 +1285,8 @@ func TestCreateAPIKey_GroupNameValidation(t *testing.T) {
 		{"GROUP123"},
 		{"a:b:c"},
 		{"mix-of_all.types:123"},
+		{"prefix#suffix-123"},
+		{"a#b"},
 	}
 
 	for _, groups := range validGroups {
